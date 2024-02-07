@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 3.20.0"
+      version = ">= 3.20.0, < 5.0"
     }
 
     random = {
@@ -35,9 +35,5 @@ terraform {
   }
 
   required_version = ">= 0.14"
-}
-
-provider "google" {
-  project = var.project_id
 }
 

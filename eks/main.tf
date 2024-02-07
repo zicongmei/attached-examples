@@ -6,10 +6,3 @@ locals {
   membership_id = lower(local.cluster_name)
 }
 
-variable "project_id" {
-  type = string
-}
-
-variable "admin_users" {
-  type = string
-}
